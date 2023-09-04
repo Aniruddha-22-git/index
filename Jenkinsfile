@@ -5,11 +5,11 @@ pipeline{
   stages{
     stage('stage1'){
       steps{
-        sh "mkdir /mnt/hii"
-        sh "git clone https://github.com/Aniruddha-22-git/index.git /mnt/hii"
-        sh "yum install httpd -y"
-        sh "systemctl start httpd "
-        sh "cp /mnt/hii/index/index.html /var/www/html"
+        //sh "mkdir /mnt/hii"
+        //sh "git clone https://github.com/Aniruddha-22-git/index.git /mnt/hii"
+        //sh "yum install httpd -y"
+        //sh "systemctl start httpd "
+        sh "cp /mnt/hii/index.html /var/www/html"
         sh "chmod -R 777 /var/www/html"
         
         //sh "yum install docker -y "
