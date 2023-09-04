@@ -5,9 +5,9 @@ pipeline{
   stages{
     stage('stage1'){
       steps{
-        sh "mkdir /mnt/in"
+       /* sh "mkdir /mnt/in"
         sh "git clone https://github.com/Aniruddha-22-git/index.git /mnt/in"
-        sh "yum install httpd -y"
+        sh "yum install httpd -y"*/
         sh "systemctl start httpd "
         sh "cp /mnt/in/index/index.html /var/www/html"
         sh "chmod -R 777 /var/www/html"
