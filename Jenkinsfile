@@ -19,7 +19,7 @@ pipeline{
         //sh "sudo cd /mnt/slave1/servers"
        // sh "sudo wget -P /mnt/slave1/servers https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.84/bin/apache-tomcat-9.0.84.zip "
        // sh "sudo cd /mnt/slave1/servers"
-        sh "sudo unzip /mnt/slave1/servers/apache-tomcat-9.0.84.zip -d ."
+        sh "sudo unzip /mnt/slave1/servers/apache-tomcat-9.0.84.zip -d /mnt/slave1/servers"
         //sh "sudo chmod -R 777 apache-tomcat-9.0.84"
         //sh "sudo cp -r /mnt/slave1/SampleWebApp.war /slave1/servers/apache-tomcat-9.0.84/webapps"
         //sh "sudo  chmod -R 777 /mnt/slave1/servers/apache-tomcat-9.0.84/webapps/SampleWebApp.war"
