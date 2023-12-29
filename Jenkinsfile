@@ -17,7 +17,7 @@ pipeline{
        // sh "sudo wget https://github.com/AKSarav/SampleWebApp/raw/master/dist/SampleWebApp.war  "
        // sh "sudo mkdir servers"
         sh "sudo cd /mnt/slave1/servers"
-        sh "wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.84/bin/apache-tomcat-9.0.84.zip /mnt/slave1/servers"
+        sh "sudo wget -P /mnt/slave1/servers https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.84/bin/apache-tomcat-9.0.84.zip "
         //sh "cd /mnt/slave1/servers"
         //sh "unzip apache-tomcat-9.0.84.zip "
         //sh "sudo chmod -R 777 apache-tomcat-9.0.84"
