@@ -23,7 +23,7 @@ pipeline{
         //sh "sudo chmod -R 777 /mnt/slave1/servers/apache-tomcat-9.0.84"
        //sh "sudo cp -r /mnt/slave1/SampleWebApp.war /mnt/slave1/servers/apache-tomcat-9.0.84/webapps"
        // sh "sudo  chmod -R 777 /mnt/slave1/servers/apache-tomcat-9.0.84/webapps/SampleWebApp.war"
-     sh " sudo /mnt/slave1/servers/apache-tomcat-9.0.84/bin/startup.sh"
+     sh "sudo yum install httpd -y "
 
       }
     }
