@@ -9,6 +9,7 @@ pipeline{
     stage('stage1'){
       steps{
         sh "sudo yum install git -y"
+        sh "sudo rm -rf /mnt/index"
         sh "sudo git clone https://github.com/Aniruddha-22-git/index.git /mnt/index"
         sh "sudo yum install httpd -y"
         sh "sudo service httpd start "  
