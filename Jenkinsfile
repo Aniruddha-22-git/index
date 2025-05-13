@@ -23,7 +23,7 @@ pipeline{
         sh "sudo cd /mnt/servers"
         sh "sudo unzip /mnt/servers/apache-tomcat-9.0.105.zip -d /mnt/servers/"
         sh "sudo chmod -R 777 /mnt/servers/apache-tomcat-9.0.105"
-        sh "sudo wget -P /mnt/servers/https://tomcat.apache.org/tomcat-6.0-doc/appdev/sample/sample.war"
+        sh "sudo wget -P /mnt/servers/apache-tomcat-9.0.105/https://tomcat.apache.org/tomcat-6.0-doc/appdev/sample/sample.war"
         //sh "sudo cp -r /mnt/slave1/SampleWebApp.war /mnt/slave1/servers/apache-tomcat-9.0.84/webapps"
         sh "sudo  chmod -R 777 /mnt/servers/apache-tomcat-9.0.105/webapps/sample.war"
      //sh "sudo yum install httpd -y "
