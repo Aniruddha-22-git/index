@@ -15,6 +15,7 @@ pipeline{
         sh "sudo service httpd start "  
         sh "sudo cp -r /mnt/index/index.html /var/www/html/"
         sh "sudo chmod -R 777 /var/www/html"
+        sh "sudo rm -rf /mnt/servers"
         //sh "sudo wget -P /https://github.com/AKSarav/SampleWebApp/raw/master/dist/SampleWebApp.war  "
         sh "sudo mkdir /mnt/servers"
         //sh "sudo cd /mnt/servers"
